@@ -1,0 +1,20 @@
+
+<view class="container chat">
+  <block wx:for="{{postData}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:for-index="idx">
+  <view class="chat-item flex-wrp">
+    <view class="avatar flex-item">
+      <image src="{{item.feed_source_img}}"></image>
+    </view>
+    <view class="chat-content flex-item">
+      <view class="chat-source">
+        <text class="chatmate">{{item.feed_source_name}}</text>
+        <text class="lasttime">{{item.comment_num}} 个月前</text>
+      </view>
+      <text class="chat-txt">你好~ 你好~ 你好~</text>
+    </view>
+  </view>
+  </block>
+ 
+</view>
+
+
